@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Workshop</title>
+    <link rel="stylesheet" href="CSSFILES/workshop.css">
+    <script  src="https://code.jquery.com/jquery-3.6.0.js"></script> 
+    <script>
+        $(document).ready(function(){
+            $("#all").click(function(){
+                $(".cakes").show();
+                $(".cupcakes").show();
+                $(".sweets").show();
+                $(".doughnuts").show();
+
+
+            });
+            $("#cakes").click(function(){
+                $(".cakes").show();
+                $(".cupcakes").hide();
+                $(".sweets").hide();
+                $(".doughnuts").hide();
+            });
+            $("#cupcakes").click(function(){
+                $(".cakes").hide();
+                $(".cupcakes").show();
+                $(".sweets").hide();
+                $(".doughnuts").hide();
+
+            });
+            $("#sweets").click(function(){
+                $(".cakes").hide();
+                $(".cupcakes").hide();
+                $(".sweets").show();
+                $(".doughnuts").hide();
+
+            });
+            $("#doughnuts").click(function(){
+                $(".cakes").hide();
+                $(".cupcakes").hide();
+                $(".sweets").hide();
+                $(".doughnuts").show();
+
+            });
+        });
+        </script>
+        <script>
+
+            $(document).ready(function()
+                {
+                  $("#myinput").on("keyup",function(){
+                    var value=$(this).val().toLowerCase();
+                    $("figure").filter(function(){
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+                            });
+                            });
+                            });
+        </script>
+</head>
+<body>
+    <h1>Our Store</h1>
+<div >
+    <button id="all"> All</button>
+    <button id="cakes"> Cakes</button>
+     <button id="cupcakes">Cupcakes</button>
+    <button id="sweets">Sweets</button>
+    <button id="doughnuts">Doughnuts</button>
+</div><br>
+   Search: <input id="myinput" type="text" placeholder="search"><br><br>
+    
+    
+    <span class="cakes">
+        <figure> <img  src="CAKES/33972_hello-minion-cake-1899.jpg"></img><figcaption>Minion Cake<br>1899RS.</figcaption></figure>
+        <figure> <img  src="CAKES/50365_choco-ball-pinata-love-1499.jpg"></img><figcaption>Choco Ball Pinata</figcaption></figure>
+        <figure><img  src="CAKES/cute-kungfupanda-cake-1799.jpg"></img><figcaption>Kungfupanda Cake</figcaption></figure>
+        <figure><img  src="CAKES/doraemon-cartoon-cake-1499.jpg"></img><figcaption>Doraemon Cartoon</figcaption></figure>
+        <figure><img  src="CAKES/melting-choco-rainbow-cake-1799.jpg"></img><figcaption>Choco Rainbow</figcaption></figure>
+        <figure><img  src="CAKES/smashing-chocolate-pinata-cake-1599.jpg"></img><figcaption>Chocolate Pinata</figcaption></figure>
+    </span>
+    <span class="cupcakes">
+        <figure><img  src="CUPCAKES/27743_4-creamy-cupcake-699.jpg"></img><figcaption>creamy cupcake</figcaption></figure>
+        <figure><img  src="CUPCAKES/41847_butterscotch-cupcake-449.jpg"></img><figcaption>butterscotch</figcaption></figure>
+        <figure><img  src="CUPCAKES/45942_apex-star-velvet-cup-cakes-499.jpg"></img><figcaption>starvelvet</figcaption></figure>
+        <figure><img  src="CUPCAKES/53333_cherry-light-choco-cupcake-499.jpg"></img><figcaption>lightchoco</figcaption> </figure>
+        <figure><img  src="CUPCAKES/53335_colorful-rainbow-cupcake-599.jpg"></img><figcaption>rainbow</figcaption> </figure>
+        <figure><img  src="CUPCAKES/53338_trio-cream-choco-strawberry-cupcake-499.jpg"></img><figcaption>choco strawberry </figcaption></figure>
+   </span>
+   <span class="sweets">
+    <figure><img  src="SWEETS\27891_ravishing-gift-hamper-3049.jpg"></img><figcaption>ravishing-gift-hamper</figcaption></figure>
+    <figure><img  src="SWEETS\32047_sweet-cravings-1149.jpg"></img><figcaption>sweet-cravings</figcaption></figure>
+    <figure><img  src="SWEETS\32114_good-luck-with-milk-cake-1899.jpg"></img><figcaption>good-luck-with-milk-cake</figcaption></figure>
+    <figure><img  src="SWEETS\32121_glittering-sweet-gift-899.jpg"></img><figcaption>glittering-sweet-gift</figcaption></figure>
+    <figure><img  src="SWEETS\53843_sweets-hamper-pack-1199.jpg"></img><figcaption>sweets-hamper-pack</figcaption></figure>
+    <figure><img  src="SWEETS\53844_ever-forever-sweetness-1099.jpg"></img><figcaption>ever-forever-sweetness</figcaption></figure>
+</span>
+<span class="doughnuts">
+    <figure><img  src="DOGHNUTS/doghnut1.jpg"></img><figcaption>Donut item</figcaption></figure>
+    <figure><img  src="DOGHNUTS/doghnut2.jpg"></img><figcaption>Donut item</figcaption></figure>
+    <figure><img  src="DOGHNUTS/doghnut3.jpg"></img><figcaption>Donut item</figcaption></figure>
+    <figure><img  src="DOGHNUTS/doghnut4.jpg"></img><figcaption>Donut item</figcaption></figure>
+    <figure><img  src="DOGHNUTS/doghnut5.jpg"></img><figcaption>Donut item</figcaption></figure>
+    <figure><img  src="DOGHNUTS/doghnut6.jpg"></img>><figcaption>Donut item</figcaption></figure>
+</span>
+</body>
+</html>

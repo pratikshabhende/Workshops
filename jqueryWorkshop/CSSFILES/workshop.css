@@ -1,0 +1,47 @@
+.cakes{
+    float: left;
+}
+.cupcakes{
+    float: left;
+}
+.sweets{
+    float:center;
+}
+.doughnuts{
+    float:center;
+}
+body{
+    text-align: center;
+    background-color: gainsboro;
+    font-family: cursive;
+}
+span.doughnuts{
+    margin:5px;
+    display: flex;
+    flex-wrap:wrap;
+    gap:10px;
+    
+}
+span.cakes{
+    margin:5px;
+    display: flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+span.cupcakes{
+    margin:5px;
+    display: flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+span.sweets{
+    margin:5px;
+    display: flex;
+    flex-wrap:wrap;
+    gap:10px;
+    padding-left: 9px;
+}
+img{
+    width: 400px;
+    height:350px;
+}
