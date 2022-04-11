@@ -1,0 +1,19 @@
+.card {
+    padding: 10px;
+}
+
+img {
+    height : 300px;
+}
+
+html,
+body {
+    height: 100%;
+}
+.container {
+    height: 100%;
+    display: flex;
+}
+.container>div{
+  margin:auto;
+}
